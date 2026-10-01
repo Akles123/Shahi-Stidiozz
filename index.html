@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Shahi Stidiozz | Photo & Videography</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#050505;
+  color:white;
+  font-family:Arial,sans-serif;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:100;
+  background:rgba(0,0,0,.75);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid #b88927;
+}
+
+nav{
+  max-width:1100px;
+  margin:auto;
+  padding:12px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  border-radius:50%;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:bold;
+  color:#ffd86b;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+}
+
+.hero{
+  min-height:100vh;
+  padding:100px 20px 50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+  radial-gradient(circle,#4b3512 0%,#080808 45%,#000 100%);
+}
+
+.hero-logo{
+  width:min(320px,75vw);
+  filter:drop-shadow(0 0 35px #c99b3b);
+}
+
+h1{
+  font-size:clamp(40px,9vw,75px);
+  margin-top:15px;
+}
+
+.gold{
+  color:#e7b84c;
+}
+
+.subtitle{
+  color:#ccc;
+  font-size:18px;
+  margin:15px auto 30px;
+  max-width:650px;
+}
+
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:14px 24px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  border:1px solid #d9a441;
+}
+
+.gold-btn{
+  color:#000;
+  background:linear-gradient(135deg,#ffe38a,#c89022);
+}
+
+.dark-btn{
+  color:white;
+  background:#111;
+}
+
+section{
+  padding:80px 18px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.title h2{
+  font-size:35px;
+}
+
+.title p{
+  color:#999;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:18px;
+}
+
+.card{
+  padding:25px;
+  text-align:center;
+  background:linear-gradient(145deg,#171717,#080808);
+  border:1px solid #5c441c;
+  border-radius:20px;
+}
+
+.card .icon{
+  font-size:35px;
+  margin-bottom:10px;
+}
+
+.card h3{
+  color:#f1c65b;
+}
+
+.card p{
+  color:#aaa;
+  font-size:14px;
+  margin-top:7px;
+}
+
+.banner{
+  width:100%;
+  border-radius:20px;
+  border:1px solid #b88927;
+  box-shadow:0 0 35px rgba(212,160,55,.18);
+}
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  border-radius:20px;
+  border:1px solid #b88927;
+}
+
+.about p{
+  color:#bbb;
+  margin-top:15px;
+}
+
+.contact{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.contact a{
+  padding:22px;
+  background:#111;
+  border:1px solid #5c441c;
+  border-radius:18px;
+  color:white;
+  text-decoration:none;
+}
+
+.contact b{
+  display:block;
+  color:#e7b84c;
+  margin-bottom:5px;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#777;
+  border-top:1px solid #33250e;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:white;
+  font-size:27px;
+  z-index:200;
+}
+
+@media(max-width:700px){
+  nav a{
+    display:none;
+  }
+
+  .about{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="brand">
+<img src="logo.jpg" class="logo">
+<span>SHAHI STUDIOZZ</span>
+</div>
+
+<div>
+<a href="#services">सेवाएँ</a>
+<a href="#gallery">फोटो</a>
+<a href="#contact">संपर्क</a>
+</div>
+
+</nav>
+</header>
+
+
+<section class="hero">
+
+<div>
+
+<img src="logo.jpg" class="hero-logo">
+
+<h1>
+SHAHI <span class="gold">STUDIOZZ</span>
+</h1>
+
+<p class="subtitle">
+Photo & Videography • Capturing Memories<br>
+आपके खास पलों को शानदार अंदाज़ में यादगार बनाने के लिए।
+</p>
+
+<div class="buttons">
+
+<a class="btn gold-btn"
+href="https://wa.me/918210885975">
+💬 WhatsApp करें
+</a>
+
+<a class="btn dark-btn"
+href="tel:+918210885975">
+📞 कॉल करें
+</a>
+
+<a class="btn dark-btn"
+href="contact.vcf">
+📇 कॉन्टैक्ट सेव करें
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<div class="container">
+
+<div class="title">
+<h2>हमारी <span class="gold">सेवाएँ</span></h2>
+<p>आपके हर खास पल के लिए प्रोफेशनल शूटिंग</p>
+</div>
+
+<div class="services">
+
+<div class="card">
+<div class="icon">📸</div>
+<h3>Wedding Photography</h3>
+<p>शादी के खूबसूरत पलों की फोटोग्राफी</p>
+</div>
+
+<div class="card">
+<div class="icon">💍</div>
+<h3>Pre-Wedding</h3>
+<p>क्रिएटिव और सिनेमैटिक प्री-वेडिंग शूट</p>
+</div>
+
+<div class="card">
+<div class="icon">🎥</div>
+<h3>Videography</h3>
+<p>HD/4K प्रोफेशनल वीडियो शूट</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Wedding Lighting</h3>
+<p>शानदार लाइटिंग सेटअप</p>
+</div>
+
+<div class="card">
+<div class="icon">🚁</div>
+<h3>Drone & Gimbal</h3>
+<p>सिनेमैटिक ड्रोन और गिम्बल शूट</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="gallery">
+
+<div class="container">
+
+<div class="title">
+<h2>हमारा <span class="gold">काम</span></h2>
+<p>Shahi Stidiozz की झलक</p>
+</div>
+
+<img src="banner.jpg" class="banner">
+
+</div>
+</section>
+
+
+<section>
+
+<div class="container about">
+
+<img src="logo.jpg">
+
+<div>
+
+<div class="title">
+<h2>Shahi <span class="gold">Stidiozz</span></h2>
+</div>
+
+<p>
+Shikaripara में फोटो और वीडियोग्राफी के लिए
+Shahi Stidiozz से संपर्क करें।
+</p>
+
+<p>
+Wedding, Pre-Wedding, HD/4K Videography,
+Wedding Lighting और Drone/Gimbal Shoot
+जैसी सेवाएँ उपलब्ध हैं।
+</p>
+
+<p>
+<b class="gold">📍 पता:</b>
+Kathikund Road, Shikaripara
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<section id="contact">
+
+<div class="container">
+
+<div class="title">
+<h2><span class="gold">संपर्क</span> करें</h2>
+<p>बुकिंग या जानकारी के लिए हमसे जुड़ें</p>
+</div>
+
+<div class="contact">
+
+<a href="tel:+918210885975">
+<b>📞 मोबाइल</b>
+8210885975
+</a>
+
+<a href="https://wa.me/918210885975">
+<b>💬 WhatsApp</b>
+8210885975
+</a>
+
+<a href="https://www.google.com/maps/search/?api=1&query=24.238369,87.477104">
+<b>📍 लोकेशन</b>
+Shikaripara
+</a>
+
+<a href="contact.vcf">
+<b>📇 कॉन्टैक्ट</b>
+Shahi Stidiozz
+</a>
+
+</div>
+</div>
+</section>
+
+
+<a class="whatsapp"
+href="https://wa.me/918210885975">
+💬
+</a>
+
+
+<footer>
+© 2026 Shahi Stidiozz • Photo & Videography
+</footer>
+
+</body>
+</html>
